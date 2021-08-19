@@ -2,11 +2,10 @@ var buttonEl = document.querySelector("#save-task");
 var tasksToDoEl = document.querySelector("#tasks-to-do");
 
 var createTaskHandler = function() {
-    var taskItemEl = document.createElement("li");
-    taskItemEl.textContent = "Wendy's new task";
-    taskItemEl.className ="task-item";
-    tasksToDoEl.appendChild(taskItemEl);
-}
+  var listItemEl = document.createElement("li");
+  listItemEl.className = "task-item";
+  listItemEl.textContent = "This is a new task.";
+  tasksToDoEl.appendChild(listItemEl);
+};
 
-buttonEl.addEventListener("click", createTaskHandler );
-
+buttonEl.addEventListener("click", createTaskHandler);
